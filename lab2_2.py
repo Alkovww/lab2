@@ -3,7 +3,6 @@ import time
 from scipy.linalg.blas import zgemm
 MATRIX_SIZE = 2048
 def generate_complex_matrix(size):
-    """Генерация случайной комплексной матрицы заданного размера."""
     return np.random.rand(size, size) + 1j * np.random.rand(size, size)
 
 if __name__ == "__main__":
